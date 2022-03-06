@@ -1,0 +1,21 @@
+<div>
+    <form (submit)="onSubmit($event)">
+        <input (focus)="onFocus()"   (blur)="onBlur()" type="text" placeholder="Shorten link here" required/>
+        <span>{{message}}</span>
+        <button type="submit">Shorten it</button>
+       
+    </form>
+    
+        <ul>
+            <li *ngFor="let url of urls,let i=index">
+                {{oldUrls[i]}}
+                <span class="span">
+                    {{url}}
+                <button (click)="copy(i,$event)" >Copy</button>
+                </span>
+           
+           </li>
+        </ul>
+  
+
+</div>

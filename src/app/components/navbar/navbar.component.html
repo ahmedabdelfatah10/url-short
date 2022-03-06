@@ -1,0 +1,32 @@
+
+
+<nav>
+    <img src="assets/images/logo.svg"/>
+    
+    <img (click)="onClick()"src="assets/images/menu-icon.svg" class="menu" style="width: 75px;height: 35px;"/>
+
+
+    
+    <span> Features</span>
+    <span> Pricing</span>
+    <span>  Resources</span>
+    <div class="sign">
+      <button>login</button>
+      <button class="signup">signUp</button>
+    </div>
+
+
+    
+ 
+</nav>
+<div class="themenu" *ngIf="show">
+ 
+  <p>Features</p>
+   <p>Pricing</p>
+  <p>Resources</p>
+  <hr/>
+  <div class="sign1">
+    <button class="btn">login</button>
+    <button class="signup1">signUp</button>
+  </div>
+</div>
